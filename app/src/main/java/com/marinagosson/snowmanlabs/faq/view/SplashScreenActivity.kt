@@ -1,10 +1,11 @@
-package com.marinagosson.snowmanlabs.faq
+package com.marinagosson.snowmanlabs.faq.view
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import com.marinagosson.snowmanlabs.faq.R
 
 class SplashScreenActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
