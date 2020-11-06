@@ -1,4 +1,4 @@
-package com.marinagosson.snowmanlabs.data.models
+package com.marinagosson.snowmanlabs.domain.models
 
 data class FAQ(
     val question: String,

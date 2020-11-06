@@ -1,12 +1,15 @@
-package com.marinagosson.snowmanlabs.domain.core
+package com.marinagosson.snowmanlabs.data.repository
 
-import com.marinagosson.snowmanlabs.data.models.FAQ
+import com.marinagosson.snowmanlabs.domain.models.FAQ
+import com.marinagosson.snowmanlabs.domain.repository.FAQRepository
 import kotlinx.coroutines.delay
+
 
 private const val LOADING_DELAY = 1000L
 
-open class FAQRepository {
-    suspend fun listFAQ() : List<FAQ> {
+class FAQRepositoryImp : FAQRepository {
+
+    override suspend fun getFAQ(): List<FAQ> {
         delay(LOADING_DELAY)
         return listOf(
             FAQ(question = "Em qual data foi fundada a Snowman Labs?", anwser = "A Snowman Labs " +
@@ -19,5 +22,9 @@ open class FAQRepository {
                     "neve em Curitiba que ocorreu em 2013. Queríamos um mascote e a partir dele, " +
                     "surgiu o nome (foi a primeira coisa que pensamos na época).")
         )
+    }
+
+    override suspend fun saveFAQ(faq: FAQ) {
+        TODO("Not yet implemented")
     }
 }
