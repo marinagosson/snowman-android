@@ -1,4 +1,4 @@
-package com.marinagosson.snowmanlabs.faq.view
+package com.marinagosson.snowmanlabs.faq.presentation
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -14,7 +14,7 @@ class SplashScreenActivity : AppCompatActivity() {
         supportActionBar?.hide()
 
         Handler(Looper.getMainLooper()).postDelayed({
-            val intent = Intent(this@SplashScreenActivity, CommonQuestionsActivity::class.java)
+            val intent = Intent(this@SplashScreenActivity, FAQActivity::class.java)
             startActivity(intent)
         }, 3000)
     }

@@ -10,11 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".view.CommonQuestionsActivity"
+        <activity android:name=".presentation.FAQActivity"
             android:label="@string/common_questions"
             android:theme="@style/AppTheme"/>
 
-        <activity android:name=".view.SplashScreenActivity" android:theme="@style/AppTheme.Fullscreen">
+        <activity android:name=".presentation.SplashScreenActivity" android:theme="@style/AppTheme.Fullscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
