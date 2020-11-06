@@ -11,9 +11,10 @@
         android:theme="@style/AppTheme">
 
         <activity android:name=".view.CommonQuestionsActivity"
-            android:label="@string/common_questions"/>
+            android:label="@string/common_questions"
+            android:theme="@style/AppTheme"/>
 
-        <activity android:name=".view.SplashScreenActivity" android:theme="@style/SplashScreen">
+        <activity android:name=".view.SplashScreenActivity" android:theme="@style/AppTheme.Fullscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
