@@ -1,6 +1,6 @@
-package com.marinagosson.snowmanlabs.faq.domain.core
+package com.marinagosson.snowmanlabs.domain.core
 
-import com.marinagosson.snowmanlabs.faq.data.models.FAQ
+import com.marinagosson.snowmanlabs.data.models.FAQ
 import kotlinx.coroutines.delay
 
 private const val LOADING_DELAY = 1000L

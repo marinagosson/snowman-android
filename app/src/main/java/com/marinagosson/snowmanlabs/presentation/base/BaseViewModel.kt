@@ -1,4 +1,4 @@
-package com.marinagosson.snowmanlabs.faq.presentation.base
+package com.marinagosson.snowmanlabs.presentation.base
 
 import androidx.lifecycle.ViewModel
 import kotlinx.coroutines.CoroutineScope

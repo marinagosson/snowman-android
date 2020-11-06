@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.marinagosson.snowmanlabs.faq">
+    package="com.marinagosson.snowmanlabs">
 
     <application
-        android:name=".AppAplication"
+        android:name="com.marinagosson.snowmanlabs.AppAplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -11,11 +11,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".presentation.FAQActivity"
+        <activity android:name="com.marinagosson.snowmanlabs.presentation.faq.FAQActivity"
             android:label="@string/common_questions"
             android:theme="@style/AppTheme"/>
 
-        <activity android:name=".presentation.SplashScreenActivity" android:theme="@style/AppTheme.Fullscreen">
+        <activity android:name="com.marinagosson.snowmanlabs.presentation.SplashScreenActivity" android:theme="@style/AppTheme.Fullscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

@@ -1,4 +1,4 @@
-package com.marinagosson.snowmanlabs.faq
+package com.marinagosson.snowmanlabs
 
 import android.app.Application
 
