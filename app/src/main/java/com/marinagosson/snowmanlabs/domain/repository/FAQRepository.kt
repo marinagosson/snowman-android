@@ -1,6 +1,7 @@
 package com.marinagosson.snowmanlabs.domain.repository
 
-import com.marinagosson.snowmanlabs.domain.models.FAQ
+import com.marinagosson.snowmanlabs.data.model.FAQ
+
 
 interface FAQRepository {
 

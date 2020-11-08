@@ -1,13 +1,18 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+kapt {
+    correctErrorTypes = true
+}
 
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.2"
 
     defaultConfig {
-        applicationId "com.marinagosson.snowmanlabs"
+        applicationId "com.marinagosson.snowmanlabs.faq"
         minSdkVersion 21
         targetSdkVersion 30
         versionCode 1
@@ -42,5 +47,13 @@ dependencies {
     implementation "org.koin:koin-android:$koin_version"
     implementation "org.koin:koin-android-viewmodel:$koin_version"
     implementation "org.koin:koin-android-ext:$koin_version"
+
+    // Room dependencies
+    implementation "androidx.room:room-runtime:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
+
+    // Stetho
+    implementation 'com.facebook.stetho:stetho:1.5.1'
+
 
 }
