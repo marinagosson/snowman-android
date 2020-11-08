@@ -3,7 +3,7 @@
     package="com.marinagosson.snowmanlabs">
 
     <application
-        android:name="com.marinagosson.snowmanlabs.AppAplication"
+        android:name=".AppAplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -15,7 +15,8 @@
             android:label="@string/common_questions"
             android:theme="@style/AppTheme"/>
 
-        <activity android:name="com.marinagosson.snowmanlabs.presentation.SplashScreenActivity" android:theme="@style/AppTheme.Fullscreen">
+        <activity android:name="com.marinagosson.snowmanlabs.presentation.SplashScreenActivity"
+            android:theme="@style/AppTheme.Fullscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

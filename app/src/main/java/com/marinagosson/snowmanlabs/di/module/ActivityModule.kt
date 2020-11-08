@@ -9,6 +9,5 @@ val FAQModule = module {
 
     single { createFAQUseCase(get()) }
 
-    // vai ter que passar a instancia do database
     single { createFAQRepository() }
 }

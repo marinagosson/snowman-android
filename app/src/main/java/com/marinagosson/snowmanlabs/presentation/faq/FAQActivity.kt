@@ -3,7 +3,7 @@ package com.marinagosson.snowmanlabs.presentation.faq
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.marinagosson.snowmanlabs.R
-import org.koin.android.architecture.ext.viewModel
+import org.koin.android.viewmodel.ext.android.viewModel
 
 class FAQActivity : AppCompatActivity() {
 

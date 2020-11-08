@@ -1,14 +1,14 @@
 package com.marinagosson.snowmanlabs
 
 import android.app.Application
+import com.marinagosson.snowmanlabs.di.module.FAQModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidFileProperties
 import org.koin.android.ext.koin.androidLogger
+import org.koin.android.viewmodel.dsl.viewModel
 import org.koin.core.context.startKoin
 
 class AppAplication  : Application() {
-
-    private val TAG = AppAplication::class.java.simpleName
 
     override fun onCreate() {
         super.onCreate()
@@ -16,7 +16,7 @@ class AppAplication  : Application() {
         startKoin{
             androidLogger()
             androidContext(this@AppAplication)
-            androidFileProperties()
+            modules(listOf(FAQModule))
         }
 
     }
